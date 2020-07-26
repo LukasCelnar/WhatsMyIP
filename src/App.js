@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useRef, useEffect} from 'react';
+import SearchIP from './components/SearchIP';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [currentInputValue, setCurrentInputValue] = useState('69.171.250.35')
+    const [inputValue, setInputValue] = useState('69.171.250.35')
+
+    const onFormSubmit = (e) => {
+        e.preventDefault()
+        setInputValue(currentInputValue)
+    }
+
+    return (
+        <div style={{textAlign: "center"}}>
+            <h1>My IP</h1>
+            <SearchIP />
+            <h1>Search with IP Adress</h1>
+            <form onSubmit={onFormSubmit} className="ui input">
+                <input 
+                type="text" 
+                placeholder="Search..." 
+                value={currentInputValue}
+                onChange={(e) => setCurrentInputValue(e.target.value)} 
+                style={{marginRight: "0.7rem"}}
+                />
+                <button className="ui basic button">Search</button>
+            </form>
+            <SearchIP inputValue={inputValue} setInputValue={setInputValue} />
+        </div>
+    );
+};
 
 export default App;
