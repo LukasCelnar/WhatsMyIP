@@ -1,7 +1,23 @@
-html {
-    font-size: ;
+body {
+    padding: 0 15rem 0 15rem;
 }
 
-body {
-    margin: 0 15rem 0 15rem;
+@media (max-width: 1200px) {
+    body {
+        padding: 0 5rem 0 5rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    body {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 1rem 0 1rem;
+    }
 }

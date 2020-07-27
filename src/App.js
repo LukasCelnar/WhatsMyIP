@@ -1,6 +1,6 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState} from 'react';
 import SearchIP from './components/SearchIP';
-import './App.css'
+import './App.css';
 
 const App = () => {
     const [currentInputValue, setCurrentInputValue] = useState('69.171.250.35')
@@ -19,7 +19,7 @@ const App = () => {
             <form onSubmit={onFormSubmit} className="ui input">
                 <input 
                 type="text" 
-                placeholder="Search..." 
+                placeholder="Enter IP Adress" 
                 value={currentInputValue}
                 onChange={(e) => setCurrentInputValue(e.target.value)} 
                 style={{marginRight: "0.7rem"}}
