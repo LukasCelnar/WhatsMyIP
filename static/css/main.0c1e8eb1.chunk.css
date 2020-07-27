@@ -1,0 +1,2 @@
+#segment{display:flex;text-align:center;flex-wrap:wrap}#list{width:50%;padding-right:1.5rem}#map{width:50%;padding-left:1.5rem}@media (min-width:2500px){.item{font-size:220%}}@media (max-width:600px){#segment{display:block}#list{width:100%;padding-right:0}#map{width:100%;padding-left:0}}body{padding:0 15rem}@media (max-width:1200px){body{padding:0 5rem}}@media (max-width:800px){body{padding:0 2rem}}@media (max-width:600px){body{padding:0 1rem}}
+/*# sourceMappingURL=main.0c1e8eb1.chunk.css.map */
