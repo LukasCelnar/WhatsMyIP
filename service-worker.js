@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WhatsMyIP/precache-manifest.ec5f7fd5d58b4f6c85fba2d8e195bfb3.js"
+  "/WhatsMyIP/precache-manifest.8b0dfb2faf2103d4a06d6e74040d6db8.js"
 );
 
 self.addEventListener('message', (event) => {
