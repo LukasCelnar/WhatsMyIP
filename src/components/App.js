@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-import SearchIP from './components/SearchIP';
+import SearchIP from './SearchIP';
 import './App.css';
 
 const App = () => {
+    // States with sample IP adress
     const [currentInputValue, setCurrentInputValue] = useState('69.171.250.35')
     const [inputValue, setInputValue] = useState('69.171.250.35')
 
+    // Run this when user submits form
     const onFormSubmit = (e) => {
         e.preventDefault()
         setInputValue(currentInputValue)

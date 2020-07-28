@@ -3,10 +3,13 @@ import axios from 'axios';
 import './SearchIP.css';
 
 const SearchIP = ({ inputValue}) => {
+    // States
     const [data, setData] = useState('');
     const [containerHeight, setContainerHeight] = useState('');
+    // Refs
     const ref = useRef('');
 
+    // Run this when Search.js is initialized or when prop inputValue changes
     useEffect(() => {
         const FetchData = async () => {
             const response = await axios.get(`https://freegeoip.app/json/${inputValue ? inputValue : ''}`);
